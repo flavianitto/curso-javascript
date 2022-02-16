@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo DOM</title>
+    <!--parte em css-->
+    <style>
+        body {
+            background: rgb(243, 168, 183);
+            color: white;
+            font: normal 18pt Arial;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado do primeiro parágrafo</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript.</p>
+
+    <!--adicionando ID/nome para essa div-->
+    <div id="msg">Clique em mim</div>
+
+    <!--parte em javascript-->
+    <script>
+        //posso ocultar a palavra window que ele funciona normal
+        window.document.write('Olá, Mundo!')
+        //-consigo mostrar as configurações da pag 
+        window.document.write('<br>Mostrando os tipos de caracteres: '+window.document.charset+'<br>') 
+        window.document.write('Mostrando a URL do site: '+window.document.URL+'<br><br>')
+        //-podemos navegar dentro da arvore DOM
+
+        //SELECIONANDO POR TAG (MARCA)
+        var p1 = window.document.getElementsByTagName('p')[0] 
+        window.document.write('Primeiro parágrafo: '+p1.innerText)
+        p1.style.color = 'red' //posso mudar a cor da fonte
+        // window.alert(p1.innerText) 
+
+        var p2 = document.getElementsByTagName('p')[1]
+        document.write('Segundo parágrafo: '+p2.innerHTML) //pega o negrito
+
+        /*mudar a cor de fundo
+        var corpo = window.document.body
+        corpo.style.background = 'black'   
+        */
+
+        /*
+        SELECIONANDO POR ID
+        var d = window.document.getElementById('msg')
+        d.style.background = 'gray'
+        //d.innerText = 'Texto modificado pelo JavaScript'
+        window.document.getElementById('msg').innerText = 'Modifiquei em uma linha'
+        */
+
+        /*
+        SELECIONANDO POR NOME
+        var d = document.getElementsByName('msg')[0]
+        d.style.background = 'gray'
+        d.innerText = 'Modificando por nome'
+        */
+
+        //SELECIONANDO POR SELETOR - # para ID e . para classe
+        var d = document.querySelector('div#msg')
+        d.style.background = 'gray'
+
+    </script>
+</body>
+</html>
