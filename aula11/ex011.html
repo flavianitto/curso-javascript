@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAÍS</title>
+    <style>
+        div#res {
+            background: rgb(233, 199, 199);
+            font-family: 'Times New Roman', Times, serif;
+            font: normal 15pt;
+            width: 280px;
+            margin-top: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecione o país</h1>
+    País: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" id="botao" value="Verificar" onclick="verificar()">
+
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var txtv = document.getElementById("txtpais");
+            var res = document.querySelector('div#res');
+            var p = (txtv.value);
+            res.innerHTML = `Morando no <strong>${p}</strong>`
+            if(p == 'Brasil' || p == 'brasil' || p == 'BR' || p == 'br') {
+                res.innerHTML += `<p>Você é brasileiro!</p>`;            
+            }
+            else {
+                res.innerHTML += `<p>Você é estrangeiro!</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
