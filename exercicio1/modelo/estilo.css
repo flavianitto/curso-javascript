@@ -1,0 +1,25 @@
+body {
+    background: rgb(150, 191, 238);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    /*fazendo sombra*/
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.329);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
