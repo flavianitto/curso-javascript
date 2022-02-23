@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <!--pegando o css de outro arquivo-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    
+    <section>
+        <div id="entrada">
+            <p>Número (de 1 a 100):
+                <input type="number" name="txtnum" id="txtnum">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+            </p>
+        </div>
+        <div id="sel">
+            <select name="sel" id="selnum" size="1">
+                <option value="v1">Insira valores acima</option>
+            </select>
+        </div>
+        <div id="btn"> 
+            <input type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+    <!--pegando o script de outro arquivo-->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    background: rgb(150, 191, 238);
+    font: normal 12pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    /*fazendo sombra*/
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.329);
+}
+
+input[type='number'] {    
+    border-width: 0px;
+    border-radius: 2px;
+    height: 22px;
+    border-color: rgb(150, 191, 238);    
+    font-size: 12pt;
+    color: rgb(92, 92, 92);    
+    outline: rgb(150, 191, 238) solid 2px;
+}
+
+input[type='button'] {
+    background: rgb(150, 191, 238);
+    font: normal 12pt Arial;
+    color: white;
+    border-radius: 3px;  
+    height: 28px;  
+    border: 1px;       
+}
+
+div#sel { 
+    text-align: center;
+    border-radius: 3px;
+    border-color: rgb(150, 191, 238);
+    width: 485px;
+    padding: 4pt;
+}
+
+div#btn, div#entrada, div#res { 
+    padding-left: 6pt;
+    padding: 5pt;
+}
+
+select#selnum {
+    width: 480px;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: rgb(150, 191, 238);
+    font: normal 12pt Arial;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
